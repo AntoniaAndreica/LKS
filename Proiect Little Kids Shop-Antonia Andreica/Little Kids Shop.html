@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Little Kids Shop</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="LKS.css">
+	</head>
+	<body>
+	<header>
+		<nav class="menu">
+	        <div class="logo">
+		        <img src="logo.png" alt="logo">
+		    </div>
+			<div class="meniu">
+				<ul>
+					<li><a href="Little Kids Shop.html" target="_blank">Acasa</a></li>
+					<li><a href="Categorii de produse.html" target="_blank">Categorii de produse</a></li>
+					<li><a href="Povestea noastra.html" target="_blank">Povestea noastra</a></li>
+					<li><a href="Contact.html" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+			<button onclick="lighttheme()" id="lighttheme"><img src="sun.png"></button>
+			<button onclick="darktheme()" id="darktheme"><img src="moon.png"></button>
+			<div class="search-container">
+				<form action="search" method="get">
+					<input type="search" id="search">
+					<button onclick="mesaj()" class="search-button">Search</button>
+				</form>	
+				<div class="basket">
+					<img src="cos.png">
+				</div>
+			</div>
+		</nav>
+			<div class="parallax">
+                <div class="cover-content">
+				    <h1>Little Kids Shop</h1>
+				    <p>"Tot ce este mai bun pentru copilul tau"</p>
+			    </div>
+			</div>
+	</header>
+	<main>
+	<h2><a href="Categorii de produse.html" class="promotie">Summer sale!</a></h2>
+		<div class="gallery-container">
+			<img class="gallery-image" src="one.jpg" alt="Image 1">
+			<img class="gallery-image" src="seven.jpg" alt="Image 2">
+			<img class="gallery-image" src="patut.jpg" alt="Image 3">
+			<img class="gallery-image" src="toyone.jpg" alt="Image 4">
+			<img class="gallery-image" src="three.jpg" alt="Image 5">
+			<img class="gallery-image" src="dulap.jpg" alt="Image 6">
+		</div>
+	<h3><a href="Categorii de produse.html" class="categorii">Categorii de produse</a></h3>
+		<div class="slide-container">
+			<div class="myslide fade">
+				<img src="slideone.jpg">
+				<div class="text">Imbracaminte</div>
+			</div>
+			<div class="myslide fade">
+				<img src="slidetwo.jpg">
+				<div class="text">Mobilier</div>
+			</div>
+			<div class="myslide fade">
+				<img src="slidethree.jpg">
+				<div class="text">Jucarii</div>
+			</div>
+		</div>
+	</main>		
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+				    <h4>Link-uri</h4>
+					<ul>
+						<li><a href="https://ro.coccodrillo.eu/politica">Politica de confidentialitate</a></li>
+						<li><a href="https://www.chicco.ro/?page=gdpr">GDPR: Drepturile consumatorului</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+				    <h5>Urmareste-ne</h5>
+				    <ul>
+						<li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></li>
+						<li><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram icon"></a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <p>&copy; Little Kids Shop 2023</p>		
+    </footer>
+	<script src="LKS.js"></script>
+</body>		
+</html>	

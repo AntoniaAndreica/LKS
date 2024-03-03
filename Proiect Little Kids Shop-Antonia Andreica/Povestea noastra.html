@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+		<title>Povestea noastra</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Povestea noastra.css">
+	</head>
+	<body>
+	    <header>
+			<nav class="menu">
+				<div class="logo">
+					<img src="logo.png" alt="logo">
+				</div>
+				<div class="meniu">
+					<ul>
+						<li><a href="Acasa.html" target="_blank">Acasa</a></li>
+						<li><a href="Categorii de produse.html" target="_blank">Categorii de produse</a></li>
+						<li><a href="Povestea noastra.html" target="_blank">Povestea noastra</a></li>
+						<li><a href="Contact.html" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+				<button onclick="lighttheme()" id="lighttheme"><img src="sun.png"></button>
+				<button onclick="darktheme()" id="darktheme"><img src="moon.png"></button>
+				<div class="search-container">
+					<form action="search" method="get">
+						<input type="search" id="search">
+						<button onclick="mesaj()" class="search-button">Search</button>
+					</form>	
+					<div class="basket">
+						<img src="cos.png">
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="poveste">
+				<img src="story.jpg">
+				<button onclick="zoom()" id="zoom"><img src="zoom.png"></button>
+			    <p>Produsele pe care le concepem sunt inspirate din bucuria și dragostea pe care copiii le aduc în viața noastră. Sărbătorim copilăria oferind bebelușilor, copiilor și familiilor produse atent concepute, materiale de calitate și opțiuni de cumpărare avantajoase.<br>Ne ocupăm de micile detalii, astfel încât dvs. să vă puteți concentra pe ceea ce contează cu adevărat: să vă bucurați de copii dumneavoastra!</p>		
+            </div>				
+		</main>
+	    <footer class="footer">
+		        <div class="container">
+			        <div class="row">
+				        <div class="footer-col">
+				            <h2>Link-uri</h2>
+					        <ul>
+						        <li><a href="https://ro.coccodrillo.eu/politica">Politica de confidentialitate</a></li>
+						        <li><a href="https://www.chicco.ro/?page=gdpr">GDPR: Drepturile consumatorului</a></li>
+					        </ul>
+				        </div>
+				    <div class="footer-col">
+				            <h3>Urmareste-ne</h3>
+				            <ul>
+						        <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></li>
+						        <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram icon"></a></li>
+					        </ul>
+				    </div>
+			    </div>
+            </div>	
+            <p>&copy; Little Kids Shop 2023</p>					
+        </footer>
+		<script src="Povestea noastra.js"></script>
+	</body>		
+</html>	

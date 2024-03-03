@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Contact.css">
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<div class="logo">
+					<img src="logo.png" alt="logo">
+				</div>
+				<div class="meniu">
+					<ul>
+						<li><a href="Acasa.html" target="_blank">Acasa</a></li>
+						<li><a href="Categorii de produse.html" target="_blank">Categorii de produse</a></li>
+						<li><a href="Povestea noastra.html" target="_blank">Povestea noastra</a></li>
+						<li><a href="Contact.html" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+				<button onclick="lighttheme()" id="lighttheme"><img src="sun.png"></button>
+				<button onclick="darktheme()" id="darktheme"><img src="moon.png"></button>
+				<div class="search-container">
+					<form action="search" method="get">
+						<input type="search" id="search">
+						<button onclick="mesaj()" class="search-button">Search</button>
+					</form>
+					<div class="basket">
+						<img src="cos.png">
+					</div>					
+				</div>
+			</nav>
+		</header>		
+		<main>
+			<h1></h1>
+			<form id="contactform">
+				<div class="date">
+					<label for="name"><b>Numele complet(obligatoriu):</b></label><br>
+					<input type="text" id="name" placeholder="Numele tau"><br>
+					<label for="mobile"><b>Telefonul tau(obligatoriu):</b></label><br>
+					<input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="Telefonul tau"><br>
+					<label for="email"><b>Emailul tau(obligatoriu):</b></label><br>
+					<input type="email" placeholder="Adresa ta de email"><br>
+					<label for="text"><b>Mesaj</b></label><br>
+					<textarea id="text" rows="8" cols="40">Mesajul tau aici ...</textarea>
+				</div>
+				<button onclick="showPopup()" class="sendtext">Trimite</button>
+				<div class="text">
+					<span class="popuptext" id="popUpUp">Mesajul a fost trimis cu succes,revenim in cel mai scurt timp cu un raspuns!</span>
+				</div>
+			</form>	
+			<h2>Ai uitat sa adaugi produse in cos?</h2>
+			<form class="one">
+				<fieldset>
+					<legend><b>Imbracaminte</b></legend>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="rochie">Rochie eleganta fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="rochie">Rochie de vara fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="camasa">Camasa fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="pantaloni">Pantaloni fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="body">Body fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="pijama">Pijama fetite</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="costum">Costum elegant baieti</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="camasa">Camasa baieti</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="tricou">Tricou baieti</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="pantaloni">Pantaloni baieti</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="body">Body baieti</label>
+					</div>
+					<div class="imbracaminte">
+						<input type="checkbox">
+						<label for="pijama">Pijama baieti</label>
+					</div>
+				</fieldset>
+			</form>	
+            <form class="one">
+				<fieldset>
+					<legend><b>Mobilier</b></legend>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="patut">Patut co-sleeper</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="patut">Patut oval</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="pat">Pat casuta Montessori</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="dulap">Dulap tip casuta</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="dulap">Dulap cu doua usi</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="biblioteca">Biblioteca</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="comoda">Comoda alba</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="comoda">Comoda maro</label>
+					</div>
+					<div class="mobilier">
+						<input type="checkbox">
+						<label for="masa">Masa cu scaun</label>
+					</div>
+				</fieldset>
+			</form>
+            <form class="one">
+				<fieldset>
+				<legend><b>Jucarii</b></legend>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="jucarie">Jucarie curcubeu</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="jucarie">Cuburi</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="abac">Abac din lemn</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="balansoar">Balansoar calut</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="jucarie">Jucarii lemn</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="tren">Tren lemn</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="puzzle">Puzzle lemn</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="bucatarie">Bucatarie lemn</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="jucarie">Jucarie curcubeu</label>
+					</div>
+					<div class="jucarii">
+						<input type="checkbox">
+						<label for="banc">Banc lucru lemn</label>
+					</div>
+				</fieldset>
+            </form>	
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+		</main>
+		<footer class="footer">
+		    <div class="container">
+			    <div class="row">
+				    <div class="footer-col">
+				        <h3>Link-uri</h3>
+							<ul>
+								<li><a href="https://ro.coccodrillo.eu/politica">Politica de confidentialitate</a></li>
+								<li><a href="https://www.chicco.ro/?page=gdpr">GDPR: Drepturile consumatorului</a></li>
+							</ul>
+				    </div>
+				    <div class="footer-col">
+				        <h4>Urmareste-ne</h4>
+				        <ul>
+						    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></li>
+						    <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram icon"></a></li>
+					    </ul>
+				    </div>
+			    </div>
+            </div>	
+            <p>&copy; Little Kids Shop 2023</p>					
+        </footer>
+		<script src="contact.js"></script>
+	</body>		
+</html>	
+	
+	

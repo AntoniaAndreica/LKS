@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+		<title>Categorii de produse</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="categorii de produse.css">
+	</head>
+	<body>
+	<header>
+		<nav class="menu">
+	        <div class="logo">
+		        <img src="logo.png" alt="logo">
+		    </div>
+			<div class="meniu">
+				<ul>
+					<li><a href="Acasa.html" target="_blank">Acasa</a></li>
+					<li><a href="Categorii de produse.html" target="_blank">Categorii de produse</a></li>
+					<li><a href="Povestea noastra.html" target="_blank">Povestea noastra</a></li>
+					<li><a href="Contact.html" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+			<button onclick="lighttheme()" id="lighttheme"><img src="sun.png"></button>
+			<button onclick="darktheme()" id="darktheme"><img src="moon.png"></button>
+			<div class="search-container">
+				<form action="search" method="get">
+					<input type="search" id="search">
+					<button onclick="mesaj()" class="search-button">Search</button>
+				</form>	
+				<div class="basket">
+					<img src="cos.png">
+				</div>
+			</div>
+		</nav>
+	</header>
+	</main>
+		<h1 class="imbracaminte">Imbracaminte</h1>
+		<div class="container">
+			<div class="card" onclick="checkSale('popUpOne')" data-sale="true">
+				<span class="popuptext" id="popUpOne">Acest produs este la pretul de 200 de lei,daca il comanzi acum!</span>
+				<img src="one.jpg">
+				<h1>Rochie eleganta fetite</h1>
+				<p> Aceasta rochie eleganta este accesorizată cu volane și realizată din tulle fin.Cu siguranță, fetița ta va atrage toate privirile celor din jur, cu această rochie unică!</p>
+				<p class="price">Pret: 220 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="two.jpg">
+				<h1>Rochie de vara fetite</h1>
+				<p>O rochita pentru mici prințese,confecționata integral din bumbac organic,cu un croi lejer in partea de jos.</p>
+				<p class="price">Pret: 110 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card" onclick="checkSale('popUpTwo')" data-sale="true">
+				<span class="popuptext" id="popUpTwo">Acest produs este la pretul de 85 de lei,daca il comanzi acum!</span>
+				<img src="three.jpg">
+				<h1>Camasa fetite</h1>
+				<p>Camasa alba pentru fetite din bumbac 100%,accesorizata cu volanase la maneci,ceea ce ii ofera eleganta si rafinament,ideala pentru orice tip de eveniment.</p>
+				<p class="price">Pret: 100 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="four.jpg">
+				<h1>Pantaloni fetite</h1>
+				<p>Jeans cu betelie elastică.Închidere cu capse în partea frontală.Detaliu rupturi.</p>
+				<p class="price">Pret: 75 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="five.jpg">
+				<h1>Body fetite</h1>
+				<p>Acest body tip maieu este confectionat din bumbac organic 100%.Este un articol indispensabil pentru bebelusi.</p>
+				<p class="price">Pret: 30 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="six.jpg">
+				<h1>Pijama fetite</h1>
+				<p>Pijamalele sunt concepute din materiale delicate,ideale pentru pielea sensibila a copiilor,cu nasturi pentru inchidere.</p>
+				<p class="price">Pret: 80 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card" onclick="checkSale('popUpThree')" data-sale="true">
+				<span class="popuptext" id="popUpThree">Acest produs este la pretul de 200 de lei,daca il comanzi acum!</span>
+				<img src="seven.jpg">
+				<h1>Costum elegant baieti</h1>
+				<p>Costumul este realizat din dragoste pentru copii,cu o deosebita atentie asupra cusaturilor si a croiului,pentru a arata perfect la orice eveniment.Tinuta va avea un look chic,fresh,elegant si delicat.</p>
+				<p class="price">Pret: 300 lei</p>
+				<button onclick="adaugat())" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="eight.jpg">
+				<h1>Camasa baieti</h1>
+				<p>Camasa din bumbac pentru baieti,model de culoare albastru deschis care este realizata dintr-un material subtire si placut la atingere.</p>
+				<p class="price">Pret: 85 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="nine.jpg">
+				<h1>Tricou baieti</h1>
+				<p>Este confectionat din bumbac 100%,cu croiala dreapta si simpla.</p>
+				<p class="price">Pret: 45 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="ten.jpg">
+				<h1>Pantaloni baieti</h1>
+				<p>Jeans skinny fit. Betelie interioară ajustabilă.Închidere cu nasture în partea frontală.</p>
+				<p class="price">Pret: 75 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="eleven.jpg">
+				<h1>Body baieti</h1>
+				<p>Acest body cu maneci scurte este confectionat din bumbac organic 100%.Este un articol indispensabil pentru bebelusi.</p>
+				<p class="price">Pret: 45 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="twelve.jpg">
+				<h1>Pijama baieti</h1>
+				<p>Pijamalele sunt concepute din materiale delicate,ideale pentru pielea sensibila a copiilor,cu nasturi pentru inchidere.</p>
+				<p class="price">Pret: 80 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+		</div>
+		<h2 class="mobilier">Mobilier</h2>
+		<div class="container">
+			<div class="card">
+				<img src="bedone.jpg">
+				<h2>Patut co-sleeper</h2>
+				<p>Acest co-sleeper din lemn este o piesă de mobilier creată pentru a satisface nevoile părinților și ale bebelușului,care au nevoie de apropiere în primele luni de viață.</p>
+				<p class="price">Pret: 1500 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card" onclick="checkSale('popUpFour')" data-sale="true">
+				<span class="popuptext" id="popUpFour">Acest produs este la pretul de 1050 de lei,daca il comanzi acum!</span>
+				<img src="patut.jpg">
+				<h2>Patut oval</h2>
+				<p>Creand un mediu asemanator unui cuib,acest patut il ajuta pe bebelus să se simtă confortabil și în siguranța.Designul oval inconjoara bebelusul,oferindu-i confort și familiaritate pentru un somn odihnitor și cele mai dulci vise.</p>
+				<p class="price">Pret: 1300 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="bedthree.jpg">
+				<h2>Pat casuta Montessori</h2>
+				<p>Patul Montessori este realizat din lemn masiv de fag vopsit ecologic alb mat cu produse pe baza de apa.Simplu si elegant,se integreaza perfect in camera copilului dumneavoastra,oferindu-i o nota de eleganta.</p>
+				<p class="price">Pret: 1000 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card" onclick="checkSale('popUpFive')" data-sale="true">
+				<span class="popuptext" id="popUpFive">Acest produs este la pretul de 620 de lei,daca il comanzi acum!</span>
+				<img src="dulap.jpg">
+				<h2>Dulap tip casuta</h2>
+				<p>Lasa-te inspirat de senzatia de confort si libertate.Extrem de usor de integrat in orice decor si stil,acest dulap tip casuta va completa perfect designul camerei copilului tau. </p>
+				<p class="price">Pret: 750 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="dulapdoi.jpg">
+				<h2>Dulap cu doua usi</h2>
+				<p>Mobilierul întrunește cele mai înalte standarde de calitate și siguranță pentru cei mici.Rezistența și durabilitatea în timp a acestuia,sunt o reflecție a design-ului inovativ și a materialelor premium utilizate în construcția mobilierului.Finisarea excepțională a mobilierului este realizată cu lacuri și vopsele ecologice,pe bază de apă.</p>
+				<p class="price">Pret: 3000 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="biblioteca.jpg">
+				<h2>Biblioteca</h2>
+				<p>Aceasta biblioteca este realizata din lemn masiv,vopsita cu vopsea pe baza de apa.Este ideala pentru camera copiilor.</p>
+				<p class="price">Pret: 550lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="comodaalba.jpg">
+				<h2>Comoda alba</h2>
+				<p>Aceasta comoda este potrivita in camera copiilor si nu numai.Are doua usi si trei sertare,ceea ce o face foarte incapatoare.</p>
+				<p class="price">Pret: 950 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="comodamaro.jpg">
+				<h2>Comoda maro</h2>
+				<p>Material premium:lemnul prelucrat este de o calitate excepțională,cu o suprafață netedă și oferind,de asemenea,robustețe,stabilitate și rezistență la umiditate.</p>
+				<p class="price">Pret: 1050 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="birou.jpg">
+				<h2>Masa cu scaun</h2>
+				<p>Setul se va potrivi perfect oricarui dormitor de copii.Poate fi folosit si ca masa mica de desen,de exemplu,la cresa sau la gradinita.</p>
+				<p class="price">Pret: 800lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+		</div>
+		<h3 class="jucarii">Jucarii</h3>
+		<div class="container">
+			<div class="card" onclick="checkSale('popUpSix')" data-sale="true">
+				<span class="popuptext" id="popUpSix">Acest produs este la pretul de 100 de lei,daca il comanzi acum!</span>
+				<img src="toyone.jpg">
+				<h3>Jucarie curcubeu</h3>
+				<p>Acest curcubeu este o jucarie de stivuire.Cele sase arcade pot fi folosite pentru stimularea creativitatii si imaginatiei copilului,prin construirea diverselor structuri de joaca:casa pentru papusi,tunel pentru tren.</p>
+				<p class="price">Pret: 150 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="cuburi.jpg">
+				<h3>Cuburi</h3>
+				<p>Aceste cuburi pentru stivuire,se suprapun pentru a forma un turn de 80 cm.</p>
+				<p class="price">Pret: 70 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="abac.jpg">
+				<h3>Abac din lemn</h3>
+				<p>Numaratul este o abilitate esentiala dar mult mai distractiva cu acest abac.In timp ce se joaca,copii vor invata culorile si sa numere si isi vor imbunatati abilitatile motrice fine.</p>
+				<p class="price">Pret: 100 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="balansoar.jpg">
+				<h3>Balansoar calut</h3>
+				<p>Jucaria este realizata din lemn de cea mai buna calitate si este finisata cu materiale textile cu texturi diferite,extrem de placute la atingere.Ajuta la dezvoltarea echilibrului,coordonarii si intarirea musculaturii picioruselor</p>
+				<p class="price">Pret: 350lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="jucarielemn.jpg">
+				<h3>Jucarii lemn</h3>
+				<p>Ideale pentru dezvoltarea indemanarii,coordonarea ochi-mana,dezvolta motricitatea fina.</p>
+				<p class="price">Pret: 100 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="tren.jpg">
+				<h3>Tren lemn</h3>
+				<p>Trenul nu functioneaza electric,toate piesele sunt realizate din lemn natur,colorate cu vopsele pe baza de apa.Incurajeaza dezvoltarea urmatoarelor abilitati:indemanare,spirit de observatie,atentie si concentrare,orientare,creativitate,educatia prin joaca.</p>
+				<p class="price">Pret: 80 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="puzzle.jpg">
+				<h3>Puzzle lemn</h3>
+				<p>Tablita puzzle din lemn,special conceputa pentru a-i ajuta pe cei mici sa invete alfabetul intr-un mod distractiv.Piesele sunt groase,circa 1 cm si pot fi puse si in picioare astfel cel mic poate forma cuvinte dupa ce invata alfabetul,este o jucarie ce poate fi folosita pe termen lung.</p>
+				<p class="price">Pret: 45 lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="kitchen.jpg">
+				<h3>Bucatarie lemn</h3>
+				<p>E timpul sa gatim ceva delicios!Invatati sa va descurcati in bucatarie,cu aceasta jucarie produsa din lemn.Jocul de rol este amuzant pentru cei mici si ii ajuta sa deprinda activitati specifice bucatariei.Poate constitui un cadou perfect pentru micile gospodine.</p>
+				<p class="price">Pret: 450lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+			<div class="card">
+				<img src="banc.jpg">
+				<h3>Banc lucru lemn</h3>
+				<p>Acest banc de lucru robust din lemn este echipat cu unelte din lemn si o mulțime de accesorii pentru a se potrivi oricarui tamplar.Setul complet este format din 48 de parti,inclusiv un ciocan de jucarie,cheie,surubelnita,piulite si suruburi.</p>
+				<p class="price">Pret: 600lei</p>
+				<button onclick="adaugat()" class="cos">Adauga in cos</button>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="contain">
+			<div class="row">
+				<div class="footer-col">
+				    <h4>Link-uri</h4>
+					<ul>
+						<li><a href="https://ro.coccodrillo.eu/politica">Politica de confidentialitate</a></li>
+						<li><a href="https://www.chicco.ro/?page=gdpr">GDPR: Drepturile consumatorului</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+				    <h5>Urmareste-ne</h5>
+				    <ul>
+						<li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></li>
+						<li><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram icon"></a></li>
+					</ul>
+				</div>
+			</div>
+        </div>	
+        <p>&copy; Little Kids Shop 2023</p>	
+    </footer>
+	<script src="categorii de produse.js"></script>
+	</body>		
+</html>	
